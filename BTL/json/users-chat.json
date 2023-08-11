@@ -1,0 +1,101 @@
+[
+    {
+        "status": "",
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "element": "div",
+        "content": "1 phút",
+        "class": "notactive",
+        "name": "Trương Chí Dũng",
+        "chat": "<b>Đang làm gì z?</b>",
+        "time": ".1 phút"
+    },
+    {
+        "status": "seenstory",
+        "img": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/362614210_1520988985375959_8176504740730404763_n.jpg?stp=dst-jpg_p320x320&_nc_cat=100&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=RcgnnV8L0TwAX8PMZ0X&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfC0B4qmjv2As24LD3EwSqI1eQXPwMEm8ANQ13CbwT3tmw&oe=64CF8197",      
+        "element": "i",
+        "content": "",
+        "class": "fa-solid fa-circle green",
+        "name": "Linh Nguyen",
+        "chat": "<b>Oke.</b>",
+        "time": ".3 giờ"
+    },
+    {   "status": "story",
+        "img": "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-1/324573404_854239058995961_6407103367914358965_n.jpg?stp=dst-jpg_p320x320&_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=d2gFY6a7ip8AX_hdT7Y&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfAvdr1gzU06C6Cc-NshIkBNIoYnFvF_GRA-xaPzSk8RGA&oe=64D07D97",
+        "element": "div",
+        "content": "2 phút",
+        "class": "notactive",
+        "name": "Khánh Duy",
+        "chat": "Bạn: Game nè m",
+        "time": ".4 giờ"
+    },
+    {
+        "status": "",
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "element": "i",
+        "content": "",
+        "class": "fa-solid fa-circle green",
+        "name": "Vĩnh Hảo",
+        "chat": "Bạn: Khỏe hong anh ơi?",
+        "time": ".5 giờ"
+    },
+    {
+        "status": "story",
+        "img": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/320439888_1275093199726402_2611313598046448744_n.jpg?_nc_cat=107&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mET1BcSqoesAX8Rkim0&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfBe7T738hRJfYvxWig08pDVSTeAJ2CXZCvWM2QpuH3ZMQ&oe=64D0460E",
+        "element": "i",
+        "content": "",
+        "class": "fa-solid fa-circle green",
+        "name": "Tú Trân",
+        "chat": "Bạn: Chừng nào đi làm m",
+        "time": ".7 giờ"
+    },
+    {
+        "status": "",
+        "img": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwoHCAoJBwkGCAoHCAoICAcIDRIICQcKFREWFhURExMYHCggGCYxGxMTITEhMSkrLi4uFx8zODMsNygtLisBCgoKCw0NDw0NFS0dHxkrKysrKysrLSsrKysrLTcrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAN8A2QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIFBgQDB//EADYQAQACAgEBBQUFBwUBAAAAAAABAgMRBAUSISIxUjJBUXKSExVCYmMzNFNhcYKiIyRzgZEU/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwD9EAaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADv8AKO+WhxelXyx2s9vs49NfaBn7g3DocXTsOOPY7XzPrHHw/wAKn0lHM7PN0l+FhtGpxU/6ePkdIraJnDOvyyUY4vkxWwTNMlOzKgAAAAAAAAAAAAAAAAAAAPRwMP8A9GaKx3xXxWBodK4PZiMuaN3nyaceZEajUR3R3JZVIACJSA83K4teTSa2jv8Aw2c9mx2w3mlvc6lldZwbrGWI12PaUZAfzFQAAAAAAAAAAAAAAAAavQsf7TJP4vZZTc6LH+2j49pBogIoAAACJfHmY4yYL1n0vuraNxMT74BykfD0i2SIjJeI/DZVpAAAAAAAAAAAAAAAABudE/d/7mG1eh5Y1fHv2fEitgRuEoAAAACLd0TMpefm5Ix4L2mdeHsg5y87yZJ9VrKnf5yNIAAAAAAAAAAAAAAAAT5Ptw808fNS8eXs2fEB1dbRaItHvWY3SebFI+xzW+SzY3DKpERO0gAjcAT5MfrXI76YqTv1PdzeVXj1nxeO3s1c9e9sl5vbzsuYI7/eAqAAAAAAAAAAAAAAAAAAHm0OF1S2KOxyPFWPZyM81sHTYeRjyxE0vSX23Hm5OImPJb7S8RqMmX6kiuotetY3a2ng5PVaUia4fFdi2ta0atO/62RqI8u4gtlyXzW7eSe9UGsQAQAAAAAAAAAAAAAADcL4sVs89jFG5a3F6VSmr5/9S/p/CDKxYb5v2dLz/g9ePpOW/fbsVbdaxXurGo/kmPNKrIjo1vfl1/RP3P8Ar3+lsBRj/c/69/pPuf8AXv8AS2Aox/uf9e/0n3P+vf6WwFGPPR592b/F87dIyxG65KS3ET3lHNZuFmxe1TcflfCe7unudXO3m5PBxciPFXU+qCjnR6eZwr8ad9ndPU8yoAAAAAAAAAAPtx+PbkXilPrfGImZ7NfOzouBxY42OI7Pjn2rGi/F4teNTsUj5p9T7wlG4ZVIjcG4BIhIAhIAIBII3AJRPkbg3AK3rFomt43EsPqHAnBPbxd+P0+lvT/6rakWia2jcSDlfdsenncaeNkmPwX9l5mkAAAAAAAJ8gaHSMEZcn2lo7qVbW+95emYoxcakfHxPQmqts3CogtuDcKgLbNqgLbNqgLbNqgLbNwqAtuDcKgLbN/FUB5+p4Iz4ZmPOrA13fK6ie+NfHwua5FPssuSn5lxHzAUAAAADW5iPzCY84+aoOjw+HHSvpqvtSs+GPlSC2zapALbNo3BuATs2jcEgnZtUgFtm0SgFtm1QFtm1QFtm1UAvtidVr2eRM/GvabLI6v+8R/xA8IAAAAAB74+aoA6OvsRP5Tb4cHLOTDG/OKvuBs2AGzYAbNgBs2AGzYAbNgBs2AGzYAbZPVpic8a/hNWZ1G/SwuXknLmvf8AtB8gAAAf/9k=",
+        "element": "div",
+        "content": "10 phút",
+        "class": "notactive",
+        "name": "Sown Soo Ny",
+        "chat": "Nhớ nấu cơm nha m",
+        "time": ".8 giờ"
+    },
+    {
+        "status": "",
+        "img": "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-1/350815270_1198258370840183_2545390218929010470_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=pWXajH5a7vIAX-geY6O&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfCScknG_H9aQAD47wOGc830o2bNwGWd-xRN81zD3DRQ1w&oe=64D14CFB",
+        "element": "div",
+        "content": "1 giờ",
+        "class": "notactive",
+        "name": "Minh Ánh",
+        "chat": "Bái baiii",
+        "time": ".10 giờ"
+    },
+    {
+        "status": "story",
+        "img": "https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/352800966_822626852738303_4700512168233617315_n.jpg?_nc_cat=106&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=T1DkcqaQwd0AX-4obzp&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfAovaqAMPw9CZyYGHN_wAH-aMD6GdsQVMWKRQXfl0wFPQ&oe=64D0A7F1",
+        "element": "i",
+        "content": "",
+        "class": "fa-solid fa-circle green",
+        "name": "Khoa Nguyễn",
+        "chat": "Làm BTL chưa ông?",
+        "time": ".12 giờ"
+    },
+    {
+        "status": "seenstory",
+        "img": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/331118974_2107951519595034_5092258743737272706_n.jpg?stp=dst-jpg_s320x320&_nc_cat=108&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=NSnxoDP_X9EAX_xQKkE&_nc_ht=scontent.fsgn2-7.fna&oh=00_AfDUu9M95vF8yMo3EuzzrNztnDQ5ZyiFi7c-rhEGIwiDwQ&oe=64D08385",
+        "element": "div",
+        "content": "2 phút",
+        "class": "notactive",
+        "name": "Ngọc Đan",
+        "chat": "Hong biet nua",
+        "time": ".14 giờ"
+    },
+    {
+        "status": "story",
+        "img": "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-1/358052714_1414842902416374_3609544697654959109_n.jpg?stp=dst-jpg_p320x320&_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=lVqUdRQogwUAX_hRu2O&_nc_ht=scontent.fsgn2-9.fna&oh=00_AfDzRLIfQRDc2pXMciOtwi_cVOlz1WWcZREZ2KOwUGVOHA&oe=64D07E5D",
+        "element": "div",
+        "content": "5 phút",
+        "class": "notactive",
+        "name": "Phạm Thị Mỹ Duyên",
+        "chat": "Bạn: Bái baii ngủ ngonn",
+        "time": ".20 giờ"
+    }
+]

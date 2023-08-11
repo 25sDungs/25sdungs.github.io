@@ -1,0 +1,273 @@
+@media (max-width: 420px) {
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        padding: 1rem;
+        width: 90%;
+    }
+    
+    .search {
+        padding: 0 1rem 1rem 1rem;
+        width: 60%;
+    }
+
+    .lul {
+        width: 100%;
+    }
+
+    .menu {
+        background-color: lightseagreen;
+    }
+
+    .right a {
+        font-size: small;
+        border-radius: 15px;
+        background: linear-gradient(to right bottom, aqua, blue) !important;
+    }
+
+    .right {
+        position: absolute;
+        top: -55px;
+        right: 0;
+        border-radius: 15px;
+        background: linear-gradient(to right bottom, aqua, blue);
+    }
+
+    .fixed-mobile {
+        z-index: 100;
+        position: fixed;
+        right: 0px;
+        left: 0;
+        top: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        top: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .title {
+        top: 10px;
+        position: absolute;
+        z-index: 25;
+    }
+
+    .wrapper img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .title>p {
+        margin: 0;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .title>h2 {
+        margin: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 4;
+    }
+
+    .slide-image {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .slides-container {
+        height: 250px;
+        transition: transform 1s;
+        position: relative;
+    }
+
+    .navigation-dots {
+        bottom: 0;
+        left: 30%;
+        right: 30%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0;
+        z-index: 100;
+    }
+
+    .single-dot {
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+        background: transparent;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .end {
+        width: 100%;
+        color: #ffffff;
+        margin-top: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #1d559f;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logofoot img {
+        width: 100%;
+        height: 100%px;
+    }
+
+    .logofoot {
+        width: 100%;
+        height: 70px;
+        padding: 1rem 0 1rem 0;
+        border-bottom: white solid 1px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .detail>p {
+        width: 50%;
+        margin: 0;
+        padding: 1rem;
+        display: block;
+    }
+
+    .detail {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .end>div:nth-child(2) {
+        padding: 1rem;
+    }
+
+    .nav {
+        background-color: lightseagreen;
+        display: flex;
+    }
+
+    .maps h2,
+    .maps div {
+        display: block;
+    }
+
+    .maps {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 830px) and (min-width: 421px) {
+    .wrapper {
+        width: 820px;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+    }
+    .wrapper img{
+        width: 820px;
+        height: 500px;
+    }
+    .overlay {
+        width: 820px;
+        height: 500px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 4;
+    }
+    .title {
+        width: 820px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 25;
+    }
+    .slides-container {
+        height: 500px;
+        transition: transform 1s;
+        position: relative;
+    }
+    .title> p {
+        margin: 0;
+        width: 60%;
+        font-weight: 300;
+        font-size: .8rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    .slide-image {
+        height: 500px;
+        width: 820px;
+        position: absolute;
+    }
+    .title> h2 {
+        margin: 0;
+        width: 60%;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+    }
+    .navigation-dots {
+        left: 30%;
+        right: 30%;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0;
+        z-index: 100;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .logofoot, .detail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .detail{
+        flex-direction: column;
+    }
+    .detail p{
+        margin: 1rem;
+    }
+}

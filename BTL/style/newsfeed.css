@@ -1,0 +1,1532 @@
+.logo {
+    width: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.flex {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #edf2f6;
+    font-family: Tahoma;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right, aqua, blue);
+}
+
+.space {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#search {
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 50%;
+    outline: none;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 300px;
+}
+
+.fa-search {
+    padding-right: 1rem;
+}
+
+.news {
+    text-shadow: 3px 3px 3px white;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a {
+    color: black;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+.icon:hover>.sub-nof {
+    transform: scale(1);
+    /* Đặt lại tỷ lệ về bình thường */
+
+}
+
+nav {
+    display: flex;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.num {
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    display: flex;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.mid>li:nth-child(5)>a>div>sup {
+    background-color: black;
+}
+
+.avt {
+    width: 60px;
+    height: 60px;
+}
+
+.avt>img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+}
+
+.name>h2 {
+    color: white;
+    margin-right: 1rem;
+}
+
+.mid {
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.right {
+    width: 30%;
+    border-left: 1px solid white;
+}
+
+.left {
+    width: 30%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px solid white;
+}
+
+.secright,
+.secleft {
+    height: 100%;
+    width: 30%;
+}
+
+.secmid {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 100px;
+}
+
+.post {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.create {
+    display: block;
+    margin: 0 0 1rem 0;
+    padding: 0 0 .7rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.widget {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    width: 4px;
+    height: 2rem;
+    display: inline-block;
+    background-color: red;
+}
+
+.text {
+    width: 80%;
+    height: auto;
+}
+
+#textarea {
+    font-size: 20px;
+    border: none;
+    padding: 1rem;
+    width: 95%;
+    height: 50px;
+    resize: none;
+    outline: none;
+}
+
+#textarea:focus {
+    /* Khi phần tử focus, loại bỏ border */
+    border: none;
+    font-size: 20px;
+}
+
+.spacetop {
+    padding-top: 1rem;
+}
+
+.percent40 {
+    justify-content: space-between;
+    width: 40%;
+}
+
+.percent40>a>i:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+
+.opt {
+    position: relative;
+}
+
+.preview {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #757a95;
+    border-radius: 30px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 1rem;
+    color: #757a95;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s, border-color .3s, color .3s;
+}
+
+.upload {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    background-color: #23d2e2;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.upload:hover {
+    background-color: rgb(255, 98, 1);
+}
+
+.preview:hover {
+    background-color: rgb(255, 98, 1);
+    color: white;
+    border-color: rgb(255, 98, 1);
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+}
+
+.weather {
+    width: 80%;
+    position: relative;
+}
+
+.weather>img {
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+}
+
+.secleft {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 1100px;
+}
+
+.add-fr,
+.acp-fr {
+    border: none;
+    margin-top: 0.3rem;
+    height: 2rem;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.menu-nof .fa-heart {
+    color: red;
+}
+.list-nof{
+    overflow-y: scroll;
+    height: 350px;
+    overflow-x: hidden;
+}
+.add-fr.invitation-sent,
+.acp-fr.invitation-sent {
+    background-color: #31a24c;
+}
+
+.add-remove button {
+    cursor: pointer;
+    background-color: #23d2e2;
+    color: white;
+}
+
+.remove-fr,
+.del-fr {
+    background-color: gray !important;
+    border: none;
+    margin-top: 0.3rem;
+    height: 2rem;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.add-remove {
+    width: 100%;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.overlay {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: #23d2e2;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.weatherweek {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-icon {
+    animation: rotate 10s infinite linear;
+}
+
+.iconcloudsun {
+    position: relative;
+}
+
+.rain {
+    position: absolute;
+    right: 30px;
+}
+
+.sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -20px;
+}
+
+.fa-cloud {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.rain {
+    opacity: 0;
+    animation: fadeIn 1s ease infinite;
+}
+
+.wtinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.wtinfo>h1 {
+    width: min-content;
+    margin-right: 1rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.wtinfo>h2 {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.calendar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    background-color: rgba(100, 192, 204, 0.8);
+}
+
+.date {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+.date>p {
+    margin: 10px 0 0 0;
+}
+
+/* MENUINFO */
+.name,
+.avt {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    top: 100%;
+    width: 300px;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    padding: 0;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.flex>p {
+    margin: 0;
+}
+
+.content-nof .fa-comment-dots {
+    color: green;
+}
+
+.fa-share-nodes,
+.fa-circle-user {
+    color: blue;
+}
+
+.fa-bookmark {
+    color: orange;
+}
+
+.content-nof .fa-heart,
+.content-nof .fa-book-open,
+.content-nof .fa-comment-dots,
+.content-nof .fa-tags,
+.content-nof .fa-share-nodes,
+.content-nof .fa-bookmark,
+.content-nof .fa-circle-user {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    font-size: 1rem;
+}
+
+.flex>a {
+    color: #23d2e2;
+}
+
+.time {
+    font-size: 0.7rem;
+}
+
+.menu-nof,
+.sub-nof {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    top: 3rem;
+    width: 350px;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sub-chat:hover a:nth-child(2) {
+    background-color: #edf2f6;
+}
+
+.sub-chat {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    top: 3rem;
+    width: 400px;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sub-chat:after {
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    color: #f9f9f9;
+    content: "\25B2";
+    /* Mã Unicode của mũi tên trỏ lên */
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sub-nof:after,
+.menu-nof:after {
+    position: absolute;
+    top: -15px;
+    left: 165px;
+    color: #f9f9f9;
+    content: "\25B2";
+    /* Mã Unicode của mũi tên trỏ lên */
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sub-nof a:not(:first-child):hover,
+.menu-nof a:not(:first-child):hover {
+    background-color: #edf2f6;
+}
+
+.see-all {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    justify-content: space-between;
+    border-bottom: lightgray 2px solid;
+}
+
+.see-all>a {
+    color: #23d2e2;
+}
+
+.see-all b {
+    color: black;
+}
+
+.menuflex {
+    border-bottom: 2px solid lightgray;
+    align-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuflex>a {
+    color: #23d2e2;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu:after {
+    position: absolute;
+    top: -15px;
+    left: 140px;
+    color: #f9f9f9;
+    content: "\25B2";
+    /* Mã Unicode của mũi tên trỏ lên */
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.active {
+    padding: 0;
+}
+
+.active>a {
+    padding: .7rem;
+}
+
+.statusflex>a {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.statusflex {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.statusflex:hover {
+    background-color: #edf2f6;
+}
+
+.statusflex>a>p {
+    margin: 0;
+}
+
+.statusflex>i {
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.statusflex>p:hover {
+    color: black;
+}
+
+.statusflex>p {
+    color: grey;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.overlaybody {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    transition: background-color .8s;
+    z-index: 40;
+}
+
+.overlaybody.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.secright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.table {
+    padding: 1rem;
+    height: 450px;
+    width: 80%;
+    background-color: white;
+    height: max-content;
+    border-radius: 15px;
+}
+
+.content {
+    margin: 0;
+    display: block;
+    padding: 0 0 .7rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.thumb {
+    width: 150px;
+    height: 100px;
+}
+
+.thumb>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.news {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.title {
+    width: 90%;
+}
+
+.title>a>h5 {
+    color: black;
+    margin: 0;
+}
+
+.title>a>p {
+    color: black;
+    margin: 0.2rem 0 0 0;
+    font-size: 0.8rem;
+}
+
+.title>a>i {
+    display: block;
+    margin: 0.2rem 0 0 0;
+    color: red;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.contact {
+    padding: 1rem;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.users-chat {
+    padding: 1rem;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.users {
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.items-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.name-chat p{
+    font-size: 0.8rem;
+    margin: 0.2rem;
+}
+.title-chat{
+    display: flex;
+}
+.img-chat>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.img-chat{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.items-img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.wtinfo,.weatherweek{
+    transition: 0.3s;
+}
+.user-left:last-child{
+    padding-bottom: 1rem;
+}
+.wtinfo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.weatherweek:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0 .5rem .5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.user-chat{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0 .5rem .5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.content-nof p {
+    margin: 0;
+}
+
+.content-nof,
+.user-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.content-nof:hover,
+.user-top:hover {
+    background-color: #f0f2f5;
+}
+
+.user:hover,.user-chat:hover {
+    background-color: #f0f2f5;
+}
+
+.user-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.user-not-fr .items-img {
+    width: 30%;
+}
+
+.stranger {
+    width: 70%;
+}
+
+.user>.items-img:hover,
+.user>.items-name:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.green {
+    border-radius: 50%;
+    border: 2px solid white;
+    color: #31a24c;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.story>img {
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seenstory>img {
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid rgb(255, 14, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live {
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    animation: livestream 1s infinite;
+}
+
+.notactive {
+    border-radius: 15px;
+    background-color: rgba(49, 162, 76, 0.8);
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
+@keyframes livestream {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.box{
+    padding: 0 .5rem 0 .5rem !important;
+}
+.name-ib>p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.ontop{
+    width: 50%;
+    border-radius: 10px;
+    padding: .5rem;
+    gap: .5rem;
+    color: white;
+    cursor: pointer;
+}
+.ontop:hover{
+    background-color: darkred;
+}
+.more-text p, .your-text p{
+    margin: 0 0 .3rem 0;
+    font-size: .9rem;
+    padding: 0.5rem .8rem .5rem .8rem;
+    color: white;
+    display: block;
+    width: fit-content;
+    background: linear-gradient(to right bottom,red, blue);
+    border-radius: 15px;
+}
+.inbox-in>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.center-box{
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.inbox-in{
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+}
+.inbox{
+    width: 40px;
+    height: 40px;
+}
+.inbox>i{
+    font-size: 0.5rem;
+}
+.your-text div{
+    display: flex;
+    justify-content: flex-end;
+}
+.text-part-left, .text-part-right{
+    padding: .5rem;
+}
+.text-part-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.text-ib{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.items-bottom .fa-face-smile{
+    position: absolute;
+    right: .5rem;
+}
+.items-top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: gray solid 1px;
+}
+.items-bottom{
+    display: flex;
+    padding-bottom: 0.8rem;
+    gap: .5rem;
+}
+.bot{
+    justify-content: flex-start !important;
+    width: 20% !important;
+}
+.media{
+    width: 45%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+.media> i{
+    cursor: pointer;
+}
+.pop-up{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 340px;
+    height: 460px;
+    border-radius: 15px;
+    background: linear-gradient( to right bottom, darkred, darkblue);
+    box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.sent{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.feeds {
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+}
+.users-chat{
+    overflow-y: scroll;
+    height: 380px;
+    border-bottom: none;
+}
+.secmid {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-content: flex-start;
+    height: 1100px;
+    overflow-y: scroll;
+}
+
+.users {
+    height: 500px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    /* Chiều rộng thanh cuộn (áp dụng cho trình duyệt dựa trên WebKit, như Chrome và Safari) */
+}
+
+/* Màu nền của thanh cuộn */
+::-webkit-scrollbar-thumb {
+    background-color: #edf2f6;
+    border-radius: 15px;
+}
+
+/* Màu nền khi hover chuột trên thanh cuộn */
+::-webkit-scrollbar-thumb:hover {
+    width: 30px;
+    background-color: #360303;
+}
+
+.str {
+    padding: 1rem 0 1rem 0;
+    width: 135px;
+    height: 240px;
+}
+
+.imgstr {
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgstr>img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.on {
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    cursor: pointer;
+}
+
+.imgstr>img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    filter: brightness(0.7);
+}
+
+.name-story>p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.name-story {
+    position: absolute;
+    bottom: -170px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.stories {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+#text-enter{
+    border: none;
+    width: 100%;
+    height: 80%;
+    font-size: 1rem;
+    border-radius: 15px;
+    outline: unset;
+}
+.on .fa-circle-plus {
+    position: absolute;
+    top: 6rem;
+    left: 2.5rem;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.timeline>p {
+    margin: 0;
+    cursor: pointer;
+    font-size: small;
+}
+
+.timeline>i {
+    font-size: small;
+}
+
+.timeline>p:hover {
+    text-decoration: underline;
+}
+
+.id>a {
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.infeeds>a>img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.incomment>a>img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.incomment {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.feedback .id {
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: #edf2f6;
+    position: relative;
+}
+
+.feedback {
+    display: flex;
+    gap: .5rem;
+}
+
+.like-comment {
+    position: absolute;
+    bottom: 1rem;
+    right: -2rem;
+    cursor: pointer;
+}
+
+.id>p {
+    margin: 0.5rem 0 0 0;
+}
+
+.incomment>a>i {
+    font-size: 0.5rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.have-str-red>a>img {
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid rgb(255, 14, 50);
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.have-str-blue>a>img {
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dots:hover {
+    transform: scale(1.1);
+    background-color: #edf2f6;
+    cursor: pointer;
+}
+
+.content-news {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-news>p {
+    margin: 0;
+}
+
+.content-news>img {
+    width: 30px;
+    height: 30px;
+}
+
+.img16-9-content {
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 1rem;
+    border-bottom: lightgray 2px solid;
+}
+
+.img16-9-content>img {
+    width: 100%;
+    height: 100%;
+}
+
+.react {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.press {
+    color: grey;
+}
+
+.button-react {
+    width: 23%;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+.button-react:hover {
+    color: black;
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img-more-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 700px;
+    padding-bottom: 1rem;
+    border-bottom: lightgray 2px solid;
+}
+
+.big-img {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 340px;
+}
+
+.big-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-img {
+    height: 300px;
+    width: 44%;
+}
+
+.img-square-content {
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 541px;
+    padding-bottom: 1rem;
+    border-bottom: lightgray 2px solid;
+}
+
+.img-square-content>img {
+    width: 100%;
+    height: 100%;
+}
+
+.img4-3-content {
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 700px;
+    padding-bottom: 1rem;
+    border-bottom: lightgray 2px solid;
+}
+
+.img4-3-content>img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-square-content img,
+.img-more-content img,
+.img16-9-content img,
+.img4-3-content img {
+    transition: 0.3s;
+}
+
+.img-square-content img:hover,
+.img-more-content img:hover,
+.img16-9-content img:hover,
+.img4-3-content img:hover {
+    filter: brightness(0.7);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.textstatus {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 2px lightgray solid;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 410px;
+    display: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTopBtn.show {
+    display: block;
+}
+
+#backToTopBtn:hover {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+.comment {
+    padding: 1rem;
+    border-top: 2px solid lightgray;
+}
+
+.like-comment>i {
+    color: grey;
+}
+
+#write-comment {
+    vertical-align: top;
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.write {
+    width: 100%;
+}
+
+.addmore {
+    width: 95%;
+    left: 1rem;
+    bottom: .7rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.sender-left{
+    display: flex;
+    gap: .5rem;
+}
+.send {
+    cursor: pointer;
+}
+
+.chose {
+    display: flex;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+#write-comment::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.users-not-fr {
+    border-bottom: 3px solid #edf2f6;
+}
