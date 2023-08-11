@@ -1,0 +1,701 @@
+.logo {
+    width: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.flex {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #edf2f6;
+    font-family: Tahoma;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right, aqua, blue);
+}
+
+.space {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#search {
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 50%;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 300px;
+}
+
+.fa-search {
+    padding-right: 1rem;
+}
+
+.news {
+    text-shadow: 3px 3px 3px white;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    background-color: darkblue;
+}
+
+nav {
+    display: flex;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.num {
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    display: flex;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.mid>li:nth-child(5)>a>div>sup {
+    background-color: black;
+}
+
+.avt {
+    width: 60px;
+    height: 60px;
+}
+
+.avt>img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+}
+
+.name>h2 {
+    color: white;
+    margin-right: 1rem;
+}
+
+.mid {
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.right {
+    width: 30%;
+    border-left: 1px solid white;
+}
+
+.left {
+    width: 30%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px solid white;
+}
+
+.secright,
+.secleft {
+    height: 100%;
+    width: 30%;
+}
+
+.secmid {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 100px;
+}
+
+.post {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.create {
+    display: block;
+    margin: 0 0 1rem 0;
+    padding: 0 0 .7rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.widget {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    width: 4px;
+    height: 2rem;
+    display: inline-block;
+    background-color: red;
+}
+
+.text {
+    width: 80%;
+    height: auto;
+}
+
+#textarea {
+    font-size: 20px;
+    border: none;
+    padding: 1rem;
+    width: 95%;
+    height: 50px;
+    resize: none;
+    outline: none;
+}
+
+#textarea:focus {
+    /* Khi phần tử focus, loại bỏ border */
+    border: none;
+    font-size: 20px;
+}
+
+.spacetop {
+    padding-top: 1rem;
+}
+
+.percent40 {
+    justify-content: space-between;
+    width: 40%;
+}
+
+.percent40>a>i:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}
+
+.opt {
+    position: relative;
+}
+
+.preview {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #757a95;
+    border-radius: 30px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 1rem;
+    color: #757a95;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s, border-color .3s, color .3s;
+}
+
+.upload {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    background-color: #23d2e2;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.upload:hover {
+    background-color: rgb(255, 98, 1);
+}
+
+.preview:hover {
+    background-color: rgb(255, 98, 1);
+    color: white;
+    border-color: rgb(255, 98, 1);
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+}
+
+.weather {
+    width: 80%;
+    position: relative;
+}
+
+.weather>img {
+    width: 100%;
+    height: 400px;
+}
+
+.secleft {
+    display: flex;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: #23d2e2;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.weatherweek {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-icon {
+    animation: rotate 10s infinite linear;
+}
+
+.iconcloudsun {
+    position: relative;
+}
+
+.rain {
+    position: absolute;
+    right: 30px;
+}
+
+.sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -20px;
+}
+
+.fa-cloud {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.rain {
+    opacity: 0;
+    animation: fadeIn 1s ease infinite;
+}
+
+.wtinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.wtinfo>h1 {
+    width: min-content;
+    margin-right: 1rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.wtinfo>h2 {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.calendar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    background-color: rgba(100, 192, 204, 0.8);
+}
+
+.date {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+
+.date>p {
+    margin: 10px 0 0 0;
+}
+
+/* MENUINFO */
+.name,
+.avt {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 300px;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    padding: 0;
+    text-align: center;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.flex>p {
+    margin: 0;
+}
+
+.flex>a {
+    color: #23d2e2;
+}
+
+.menuflex {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    align-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuflex>a {
+    color: #23d2e2;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu:after {
+    position: absolute;
+    top: -15px;
+    left: 140px;
+    color: #f9f9f9;
+    content: "\25B2";
+    /* Mã Unicode của mũi tên trỏ lên */
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.active {
+    padding: 0;
+}
+
+.active>a {
+    padding: .7rem;
+}
+.statusflex>a{
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.statusflex {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.statusflex:hover {
+    background-color: #edf2f6;
+}
+.statusflex>a>p {
+    margin: 0;
+}
+.statusflex>i {
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.statusflex>p:hover {
+    color: black;
+}
+.statusflex>p {
+    color: grey;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.overlaybody {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    transition: background-color .8s;
+    z-index: 40;
+}
+
+.overlaybody.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.secright {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.table {
+    padding: 1rem;
+    height: 450px;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.content {
+    margin: 0;
+    display: block;
+    padding: 0 0 .7rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.thumb {
+    width: 150px;
+    height: 100px;
+}
+
+.thumb>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.news {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+
+.title {
+    width: 90%;
+}
+
+.title>a>h5 {
+    color: black;
+    margin: 0;
+}
+
+.title>a>p {
+    color: black;
+    margin: 0.2rem 0 0 0;
+    font-size: 0.8rem;
+}
+.title>a>i {
+    display: block;
+    margin: 0.2rem 0 0 0;
+    color: red;
+    font-size: 0.8rem;
+    text-align: right;
+}
+.thumb:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.contact {
+    padding: 1rem;
+    height: 1380px;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+}
+.users{
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: 3px solid #edf2f6;
+}
+.items-img>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.items-img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+  .wtinfo:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}   
+.weatherweek:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 0 .5rem .5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.user:hover{
+    background-color: #f0f2f5;
+}
+.user>.items-img:hover , .user>.items-name:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.green{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: #31a24c;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+.story>img{
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seenstory>img{
+    padding: 2px;
+    width: 80%;
+    height: 80%;
+    border: 3px solid rgb(255, 14, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.live{
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    animation: livestream 1s infinite;
+}
+.notactive{
+    border-radius: 15px;
+    background-color: #31a24c;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+@keyframes livestream{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

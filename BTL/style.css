@@ -1,0 +1,46 @@
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.chatHeader {
+  background-color: #4267B2;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatContent {
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.message {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sender {
+  background-color: #E5E5EA;
+}
+
+.receiver {
+  background-color: #DCF8C6;
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+}
+
+/* Thêm các kiểu CSS khác để tùy chỉnh giao diện */

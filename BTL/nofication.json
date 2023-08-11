@@ -1,0 +1,51 @@
+[
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-heart",
+        "name": "Bảo Di",
+        "title": "Đã bày tỏ cảm xúc về một ảnh",
+        "time": "2 giây trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-comment-dots",
+        "name": "Đăng Khoa",
+        "title": "Đã bình luận về một ảnh",
+        "time": "4 phút trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-share-nodes",
+        "name": "Yến Nhi",
+        "title": "Đã chia sẻ một bài viết",
+        "time": "10 phút trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-book-open",
+        "name": "Hoàng Dũng",
+        "title": "Đã đăng một tin mới",
+        "time": "20 phút trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-circle-user",
+        "name": "Tấn Tài",
+        "title": "Đã cập nhật ảnh đại diện của họ",
+        "time": "32 phút trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-tags",
+        "name": "Mỹ Hạnh",
+        "title": "Đã gắn thẻ bạn vào một bài viết",
+        "time": "1 giờ trước"
+    },
+    {
+        "img": "https://scontent.fsgn13-4.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_ohc=0KR7rzz-R4cAX8wh99s&_nc_ht=scontent.fsgn13-4.fna&oh=00_AfBdUJH7NCj8ASA0xIlgIfomxMCgiubSuvpEN6G8lHOnoA&oe=64F7EA38",
+        "type":"fa-solid fa-bookmark",
+        "name": "Quốc Đạt",
+        "title": "Đã chia sẻ một kỉ niệm",
+        "time": "5 giờ trước"
+    }
+]
