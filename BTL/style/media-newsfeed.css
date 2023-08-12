@@ -1,4 +1,16 @@
 @media (max-width: 420px){
+    .theme{
+        position: absolute;
+        right: 0;
+        width: 100px;
+        top: 55px;
+    }
+    .theme:after{
+        position: absolute;
+        right: 8px;
+        top: -25px;
+        font-size: 25px;
+    }
     nav{
         display: flex;
         flex-direction: column;
@@ -445,5 +457,17 @@
         height: 820px;
         padding-bottom: 1rem;
         border-bottom: lightgray 2px solid;
+    }
+    .theme{
+        position: absolute;
+        right: -5px;
+        top: 45px;
+        width: 150px;
+    }
+    .theme:after{
+        position: absolute;
+        right: 8px;
+        top: -25px;
+        font-size: 25px;
     }
 }

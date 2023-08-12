@@ -84,15 +84,76 @@ window.onload = function () {
         $(".sub-chat").fadeOut('fast');
       }
     });
-    $(document).ready(()=>{
-      $(".fa-xmark").click(()=>{
-        $(".pop-up").fadeOut('fast');
-      })
-      $(".user-chat").click(()=>{
-        $(".pop-up").show().addClass("animate__animated animate__slideInRight");
-      })
+    $(".fa-xmark").click(() => {
+      $(".pop-up").fadeOut('fast');
     })
+    $(".user-chat").click(() => {
+      $(".pop-up").show().addClass("animate__animated animate__slideInRight");
+    })
+    $('.space .fa-gear').click((event) => {
+      event.stopPropagation(); // Ngăn chặn sự kiện click lan tỏa lên cấp cao hơn
+      $('.theme').fadeIn('fast');
+    });
+
+    $(document).click((event) => {
+      if (!$(event.target).closest(".theme, .light-dark").length) {
+        $(".theme").fadeOut('fast');
+      }
+    });
+    $(document).ready(function() {
+      checkFooterVisibility(); // Kiểm tra lần đầu khi tải trang
+      
+      $(window).on('resize', function() {
+          checkFooterVisibility(); // Kiểm tra lại khi cửa sổ được thay đổi kích thước
+      });
+      
+      function checkFooterVisibility() {
+          if (window.innerWidth < 1000) {
+              $('footer').hide(); // Sử dụng hàm hide() để ẩn footer
+          } else {
+              $('footer').show(); // Sử dụng hàm show() để hiển thị footer
+          }
+      }
   });
+    $('#theme-toggle').change(() => {
+      if ($('#theme-toggle').prop('checked')) {
+        $('.content, .news, .create, .users-not-fr, .users, .comment, .img16-9-content, .img4-3-content, .img-square-content , .img-more-content').addClass('border-theme');
+        $('.feeds a').addClass('theme-text');
+        $('.user, .user-chat, .content-nof, .user-top').addClass('user-theme');
+        $('body').addClass('scroll-theme');
+        $('.comment .id').addClass('comment-theme');
+        $('.upload, .add-fr, .acp-fr, .preview').addClass('theme-button');
+        $('body').addClass('dark-theme');
+        $('.react sup, .react div').addClass('theme-text');
+        $('.post #textarea, #write-comment').addClass('border-radius');
+        $('header').addClass('little-dark-theme');
+        $('.table,.sub-nof, .menu-nof, .sub-chat').addClass('little-dark-theme');
+        $('.news p').addClass('theme-text');
+        $('.news h5,.news i, .see-all b, footer').addClass('theme-text');
+        $('.post').addClass('little-dark-theme');
+        $('.feeds').addClass('little-dark-theme');
+        $('.contact').addClass('little-dark-theme');
+      } else {
+        $('.content, .news, .create, .users-not-fr, .users, .comment, .img16-9-content, .img4-3-content, .img-square-content , .img-more-content').removeClass('border-theme');
+        $('.user, .user-chat, .content-nof, .user-top').removeClass('user-theme');
+        $('.comment .id').removeClass('comment-theme');
+        $('body').removeClass('scroll-theme');
+        $('.upload, .add-fr,.acp-fr, .preview').removeClass('theme-button');
+        $('.feeds a').removeClass('theme-text');
+        $('.react sup, .react div, footer').removeClass('theme-text');
+        $('.post #textarea, #write-comment').removeClass('border-radius');
+        $('header').removeClass('little-dark-theme');
+        $('body').removeClass('dark-theme');
+        $('.news p').removeClass('theme-text');
+        $('.news h5,.news i, .see-all b').removeClass('theme-text');
+        $('.table,.sub-nof, .menu-nof, .sub-chat').removeClass('little-dark-theme');
+        $('.post').removeClass('little-dark-theme');
+        $('.feeds').removeClass('little-dark-theme');
+        $('.contact').removeClass('little-dark-theme');
+      }
+    });
+  })
+
   // Get all the elements with class "button-react like"
   let likeButtons = document.querySelectorAll('.react .button-react.like');
 
@@ -211,7 +272,7 @@ fetch('/json/users.json')
     });
   })
   .catch(error => console.error('Error fetching user data:', error));
-  fetch('/json/users-chat.json')
+fetch('/json/users-chat.json')
   .then(response => response.json())
   .then(data => {
     const userList = document.querySelector('.users-chat');
