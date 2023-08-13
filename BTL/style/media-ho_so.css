@@ -1,0 +1,39 @@
+@media (max-width: 420px) {
+    .SinhVien {
+        display: flex;
+        width: 100%;
+    }
+
+    #timSinhVien {
+        margin: 0.3rem;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        height: 1.5rem;
+    }
+
+    .info {
+        width: 45%;
+    }
+
+    .image {
+        width: 45%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .DanhSachSinhVien {
+        width: 100%;
+        display: block;
+    }
+
+    .aside-right {
+        width: 0%;
+    }
+
+    .aside-left {
+        width: 0%;
+    }
+}

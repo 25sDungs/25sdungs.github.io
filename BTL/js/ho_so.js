@@ -1,5 +1,5 @@
 function loadDanhSachSV() {
-    fetch('/json/ho_so_SV.json').then(res => res.json()).then(data => {
+    fetch('../json/ho_so_SV.json').then(res => res.json()).then(data => {
         let h = "";
         let l = "";
         let them = false;
@@ -7,11 +7,11 @@ function loadDanhSachSV() {
         for (let p of data) {
             h += `
             <div class="SinhVien" id="SinhVien">
-                <img src="/image/${p.profileImage}" alt="Sinh Vien">
-                <h4>Họ Tên: <span id="hoTen">${p.hoTen}</span></h4>
+                <div class="image"><img src="../image/${p.profileImage}" alt="Sinh Vien"></div>
+                <div class="info"><h4>Họ Tên: <span id="hoTen">${p.hoTen}</span></h4>
                 <h5>Khoa: <span id="khoa">${p.khoa}</span></h5>
                 <h5>Mã Lớp: <span id="lop">${p.lop}</span></h5>
-                <h5>Mã Số Sinh Viên: <span id="mssv">${p.mssv}</span></h5>
+                <h5>Mã Số Sinh Viên: <span id="mssv">${p.mssv}</span></h5></div>
             </div>
             `;
             them = true;
@@ -32,13 +32,11 @@ function loadDanhSachSV() {
         let e = document.getElementById("DanhSachSinhVien");
         if (e !== null)
             e.innerHTML += h;
-        // để hàm ở đây mới có thể tìm được bằng click (Ngồi mò 3 tiếng)
         $("#submenu-hoso li>a").click(function(){
             let find=$(this).attr("href");
             find=find.replace(/[_]/g, ' ');
             find=find.replace('#', '');
             $("#timSinhVien").val(`${find}`);
-            // copy từ dưới lên
             let a=$("#timSinhVien").val();
             if (a !== "") {
                 $("#DanhSachSinhVien>div").addClass("display-none");
