@@ -30,7 +30,7 @@
     {
         "profileImage": "User-Profile.png",
         "hoTen": "Buồn Của Anh",
-        "mssv": "2051052024",
+        "mssv": "2251234567",
         "khoa": "Quản Trị Kinh Doanh",
         "lop": "DH22QT02"
     },
@@ -44,7 +44,7 @@
     {
         "profileImage": "User-Profile.png",
         "hoTen": "Buồn Của Em",
-        "mssv": "2095123648",
+        "mssv": "2015123648",
         "khoa": "Quản Trị Kinh Doanh",
         "lop": "DH20QT01"
     },
@@ -67,7 +67,7 @@
         "hoTen": "Dũng Y Mờ",
         "mssv": "2085264913",
         "khoa": "Công Nghệ Thông Tin",
-        "lop": "DH22IM02"
+        "lop": "DH20IM02"
     },
     {
         "profileImage": "User-Profile.png",
@@ -89,5 +89,12 @@
         "mssv": "1655057650",
         "khoa": "Tài Chính - Ngân Hàng",
         "lop": "DH16FB01"
+    },
+    {
+        "profileImage": "User-Profile.png",
+        "hoTen": "Cái Gì Vậy Trời",
+        "mssv": "1612345678",
+        "khoa": "Kinh Tế",
+        "lop": "DH16KT01"
     }
 ]

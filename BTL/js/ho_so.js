@@ -1,5 +1,5 @@
 function loadDanhSachSV() {
-    fetch('/json/ho_so_SV.json').then(res => res.json()).then(data => {
+    fetch('../json/ho_so_SV.json').then(res => res.json()).then(data => {
         let h = "";
         let l = "";
         let them = false;
@@ -7,11 +7,11 @@ function loadDanhSachSV() {
         for (let p of data) {
             h += `
             <div class="SinhVien" id="SinhVien">
-                <img src="/image/${p.profileImage}" alt="Sinh Vien">
-                <h4>Họ Tên: <span id="hoTen">${p.hoTen}</span></h4>
+                <div class="image"><img src="../image/${p.profileImage}" alt="Sinh Vien"></div>
+                <div class="info"><h4>Họ Tên: <span id="hoTen">${p.hoTen}</span></h4>
                 <h5>Khoa: <span id="khoa">${p.khoa}</span></h5>
                 <h5>Mã Lớp: <span id="lop">${p.lop}</span></h5>
-                <h5>Mã Số Sinh Viên: <span id="mssv">${p.mssv}</span></h5>
+                <h5>Mã Số Sinh Viên: <span id="mssv">${p.mssv}</span></h5></div>
             </div>
             `;
             them = true;
@@ -32,14 +32,12 @@ function loadDanhSachSV() {
         let e = document.getElementById("DanhSachSinhVien");
         if (e !== null)
             e.innerHTML += h;
-        // để hàm ở đây mới có thể tìm được bằng click (Ngồi mò 3 tiếng)
-        $("#submenu-hoso li>a").click(function(){
-            let find=$(this).attr("href");
-            find=find.replace(/[_]/g, ' ');
-            find=find.replace('#', '');
+        $("#submenu-hoso li>a").click(function () {
+            let find = $(this).attr("href");
+            find = find.replace(/[_]/g, ' ');
+            find = find.replace('#', '');
             $("#timSinhVien").val(`${find}`);
-            // copy từ dưới lên
-            let a=$("#timSinhVien").val();
+            let a = $("#timSinhVien").val();
             if (a !== "") {
                 $("#DanhSachSinhVien>div").addClass("display-none");
                 let tim, khoa;
@@ -47,7 +45,7 @@ function loadDanhSachSV() {
                 for (let i = 0; i < $("#DanhSachSinhVien>div").length; i++) {
                     tim = $(".SinhVien").eq(i);
                     khoa = tim.find("#khoa").text();
-                    if (khoa.slice(0, lengthOfA) == a)
+                    if (khoa.indexOf(a) >= 0)
                         $(".SinhVien").eq(i).removeClass("display-none");
                 }
             }
@@ -73,13 +71,13 @@ $(document).ready(() => {
                 khoa = tim.find("#khoa").text();
                 lop = tim.find("#lop").text();
                 mssv = tim.find("#mssv").text();
-                if (hoTen.slice(0, lengthOfA).toUpperCase() == a.toUpperCase())
+                if (hoTen.toUpperCase().indexOf(a.toUpperCase()) >= 0)
                     $(".SinhVien").eq(i).removeClass("display-none");
-                else if (khoa.slice(0, lengthOfA).toUpperCase() == a.toUpperCase())
+                else if (khoa.toUpperCase().indexOf(a.toUpperCase()) >= 0)
                     $(".SinhVien").eq(i).removeClass("display-none");
-                else if (lop.slice(0, lengthOfA).toUpperCase() == a.toUpperCase())
+                else if (lop.toUpperCase().indexOf(a.toUpperCase()) >= 0)
                     $(".SinhVien").eq(i).removeClass("display-none");
-                else if (mssv.slice(0, lengthOfA).toUpperCase() == a.toUpperCase())
+                else if (mssv.indexOf(a) >= 0)
                     $(".SinhVien").eq(i).removeClass("display-none");
             }
         }

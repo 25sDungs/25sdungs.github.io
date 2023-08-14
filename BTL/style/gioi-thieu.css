@@ -1,4 +1,4 @@
-.welc0me {
+.welcome {
   padding: 1rem;
   text-align: center;
   width: 100%;
@@ -38,15 +38,6 @@
   text-align: right;
 }
 
-.iframe-vid-pr {
-  text-align: center;
-}
-
-.iframe-vid {
-  width: 90%;
-  height: 300px;
-}
-
 .flex {
   display: flex;
 }
@@ -76,13 +67,6 @@ table#gioi-thieu {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 3rem;
-}
-
-.detail {
-  width: 50%;
-  margin-top: 3rem;
-  border-bottom: white solid 1px;
-  padding-bottom: 2rem;
 }
 
 .logofoot {
@@ -178,4 +162,32 @@ p>a {
 
 ul>li {
   list-style: none;
+}
+
+.iframe-vid-pr {
+  text-align: center;
+}
+
+iframe.iframe-vid {
+  width: 800px;
+  height: 450px;
+}
+
+@media (max-width: 450px) {
+  .maps {
+    width: 95%;
+  }
+
+  .gioi-thieu-main .gioi-thieu-chung {
+    width: 95%;
+  }
+
+  .iframe-vid-pr {
+    text-align: center;
+  }
+
+  .iframe-vid {
+    width: 300px !important;
+    height: 150px !important;
+  }
 }
