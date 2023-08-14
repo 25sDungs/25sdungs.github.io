@@ -198,6 +198,13 @@
         flex-direction: column;
         gap: 20px;
     }
+    #textarea {
+        width: 90%;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
     .table{
         height: max-content;
     }

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="../style/media-login.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
@@ -24,11 +25,11 @@
   </header>
   <nav class="nav">
     <ul class="menu left">
-      <li><a href="../index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
-      <li><a href="gioi-thieu.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+      <li><a href="../html/btl.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+      <li><a href="../html/gioi-thieu.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
       <li><a href="#"><i class="fas fa-graduation-cap"></i> Kết nối cựu sinh viên</a></li>
-      <li><a href="newsfeed.html"><i class="fas fa-newspaper"></i> Bài viết</a></li>
-      <li><a href="ho_so.html"><i class="fas fa-search-plus"></i> Tìm hồ sơ cựu sinh viên</a></li>
+      <li><a href="../html/newsfeed.html"><i class="fas fa-newspaper"></i> Bài viết</a></li>
+      <li><a href="../html/ho_so.html"><i class="fas fa-search-plus"></i> Tìm hồ sơ cựu sinh viên</a></li>
     </ul>
   </nav>
   <main class="animate__animated animate__bounceInDown">
@@ -62,7 +63,7 @@
                   style="color: #126bc4;"></i></a>
             </div>
             <span>hoặc sử dụng tài khoản của bạn</span>
-            <input class="enter" type="email" placeholder="Email" />
+            <input class="enter" type="text" placeholder="Tên đăng nhập" />
             <input class="enter" type="password" placeholder="Mật khẩu" />
             <a class="forgot" href="#">Quên mật khẩu?</a>
             <button class="sign">Đăng nhập</button>
@@ -71,14 +72,16 @@
         <div class="overlay-container">
           <div class="overlay">
             <div class="overlay-panel overlay-left">
-              <img class="logoform" src="https://cdn.haitrieu.com/wp-content/uploads/2021/09/Logo-DH-Mo-TPHCM-OU.png"
+              <div class="logoform">
+                <img src="../image/logo.png"
                 alt="logo">
+              </div>  
               <h2 class="create">Chào mừng đã trở lại!</h2>
               <p>Điều gì đáng chờ đợi để sinh viên OUer khám phá?</p>
               <button class="ghost" id="signIn">Đăng nhập</button>
             </div>
             <div class="overlay-panel overlay-right">
-              <img class="logoform" src="https://cdn.haitrieu.com/wp-content/uploads/2021/09/Logo-DH-Mo-TPHCM-OU.png"
+              <img class="logoform" src="../image/logo.png"
                 alt="logo">
               <h2 class="create">Chào cựu sinh viên OUer!</h2>
               <p>Điền thông tin chi tiết để kết nối với chúng tôi</p>
@@ -101,7 +104,7 @@
       </div>
     </div>
     <div class="row">
-      <div>
+      <div class="contact">
         <h2><i class="fa-solid fa-sitemap fa-beat-fade" style="color: #ffffff;"></i> THÔNG TIN CHUNG</h2>
         <p>Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, TP. HCM.</p>
         <p>Điện thoại: 028-38364748.</p>
@@ -209,7 +212,7 @@
     </div>
     <button id="backToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
   </footer>
-  <script src="/js/login.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>

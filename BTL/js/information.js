@@ -124,16 +124,20 @@ window.onload = function () {
         $('.comment .id').addClass('comment-theme');
         $('.upload, .add-fr, .acp-fr').addClass('theme-button');
         $('body').addClass('dark-theme');
-        $('.react sup, .react div').addClass('theme-text');
+        $('.react sup, .react div, .top-inf a').addClass('theme-text');
         $('.post #textarea, #write-comment,#search,.preview').addClass('border-radius');
-        $('header').addClass('little-dark-theme');
+        $('header, .top-inf').addClass('little-dark-theme');
         $('.table,.sub-nof, .menu-nof, .sub-chat,.dropdown-menu').addClass('little-dark-theme');
         $('.news p').addClass('theme-text');
         $('.news h5,.news i, .see-all b, footer').addClass('theme-text');
         $('.post').addClass('little-dark-theme');
         $('.feeds').addClass('little-dark-theme');
-        $('.contact').addClass('little-dark-theme');
+        $('.contact, .focus-inf').addClass('little-dark-theme');
+        $('.bg').addClass('bg-theme');
+        $('.nav-info').addClass('nav-theme');
       } else {
+        $('.nav-info').removeClass('nav-theme');
+        $('.bg').removeClass('bg-theme');
         $('.content, .news, .create, .users-not-fr,.menuflex, .users,.see-all, .comment, .img16-9-content, .img4-3-content, .img-square-content ,.left, .mid, .right, .img-more-content').removeClass('border-theme');
         $('.user, .user-chat, .content-nof, .user-top').removeClass('user-theme');
         $('.comment .id').removeClass('comment-theme');
@@ -142,10 +146,10 @@ window.onload = function () {
         $('.feeds a').removeClass('theme-text');
         $('.react sup, .react div, footer').removeClass('theme-text');
         $('.post #textarea, #write-comment,#search,.preview').removeClass('border-radius');
-        $('header').removeClass('little-dark-theme');
+        $('header, .top-inf, .focus-inf').removeClass('little-dark-theme');
         $('body').removeClass('dark-theme');
         $('.news p').removeClass('theme-text');
-        $('.news h5,.news i, .see-all b').removeClass('theme-text');
+        $('.news h5,.news i, .see-all b, .top-inf a').removeClass('theme-text');
         $('.table,.sub-nof, .menu-nof, .sub-chat,.dropdown-menu').removeClass('little-dark-theme');
         $('.post').removeClass('little-dark-theme');
         $('.feeds').removeClass('little-dark-theme');
@@ -153,35 +157,6 @@ window.onload = function () {
       }
     });
   })
-
-  // Get all the elements with class "button-react like"
-  let likeButtons = document.querySelectorAll('.react .button-react.like');
-
-  // Attach the event listener to each "like" button
-  likeButtons.forEach(likeButton => {
-    likeButton.addEventListener('click', function () {
-      // Toggle the color of the heart icon when clicking on the "like" button
-      let heartIcon = likeButton.querySelector('i.fa-solid.fa-heart');
-      let Numb = likeButton.querySelector('sup');
-      let Drop = likeButton.querySelector('div');
-      let supElement = likeButton.querySelector('.button-react.like sup');
-
-      // Lấy số từ nội dung văn bản của thẻ <sup> và chuyển đổi thành kiểu số nguyên
-      let likeCount = parseInt(supElement.textContent);
-      if (heartIcon.style.color == 'red') {
-        heartIcon.style.color = ''; // Remove the inline style to reset the color
-        Numb.style.color = '';
-        Drop.style.color = '';
-        likeCount--;
-      } else {
-        heartIcon.style.color = 'red';
-        Numb.style.color = 'red';
-        Drop.style.color = 'red';
-        likeCount++;
-      }
-      likeButton.querySelector('sup').textContent = ` ${likeCount}`;
-    });
-  });
   actElements.forEach(function (element) {
     element.addEventListener('click', viewprofile);
   });
@@ -197,24 +172,7 @@ window.onload = function () {
       menu.style.display = 'none'; // Ẩn menu nếu không thuộc menu, name hoặc avt và menu đang hiển thị
     }
   });
-  let textarea = document.getElementById('textarea');
-  let overlay = document.querySelector('.overlaybody');
-  textarea.addEventListener('focus', function () {
-    overlay.style.display = 'block';
-    setTimeout(function () {
-      overlay.classList.add('active');
-    });
-  });
-
-  textarea.addEventListener('blur', function () {
-    overlay.classList.remove('active');
-    // Đặt lại lớp active thành không có sau khi hiệu ứng từ từ kết thúc
-    setTimeout(function () {
-      overlay.style.display = 'none';
-      overlay.classList.remove('active');
-    }, 800);
-  });
-};
+}
 let scrollmid = document.querySelector('.secmid');
 let backToTopBtn = document.getElementById('backToTopBtn');
 window.addEventListener('scroll', function () {
@@ -247,32 +205,8 @@ backToTopBtn.addEventListener('click', function () {
     behavior: 'smooth' // Cuộn mượt đến đầu trang
   });
 });
-// Fetch and display user information from JSON file
-fetch('/json/users.json')
-  .then(response => response.json())
-  .then(data => {
-    const userList = document.querySelector('.users-not-fr');
-    data.forEach(user => {
-      const userCard = document.createElement('div');
-      userCard.className = 'user-left';
-      userCard.innerHTML = `
-      <div class="items-img"><img
-      src="${user.img}"
-      alt="user">
-      </div>
-      <div class="stranger">
-        <b>${user.name}</b>
-        <div class="add-remove">
-          <button class="add-fr">${user.addfr}</button>
-          <button class="remove-fr">${user.remove}</button>
-        </div>
-      </div>
-    `;
-      userList.appendChild(userCard);
-    });
-  })
-  .catch(error => console.error('Error fetching user data:', error));
-fetch('/json/users-chat.json')
+
+fetch('../json/users-chat.json')
   .then(response => response.json())
   .then(data => {
     const userList = document.querySelector('.users-chat');
@@ -305,7 +239,7 @@ function viewprofile() {
     menu.style.display = 'block';
   }
 }
-fetch('/json/user-contact.json')
+fetch('../json/user-contact.json')
   .then(response => response.json())
   .then(data => {
     const userList = document.querySelector('.users');
@@ -324,7 +258,7 @@ fetch('/json/user-contact.json')
     });
   })
   .catch(error => console.error('Error fetching user data:', error));
-fetch('/json/nofication.json')
+fetch('../json/nofication.json')
   .then(response => response.json())
   .then(data => {
     const notifList = document.querySelector(".list-nof");
@@ -349,7 +283,7 @@ fetch('/json/nofication.json')
     })
   })
   .catch(error => console.error('Error fetching user data:', error));
-fetch('/json/acceptfr.json')
+fetch('../json/acceptfr.json')
   .then(response => response.json())
   .then(data => {
     const userList = document.querySelector('.sub-nof');

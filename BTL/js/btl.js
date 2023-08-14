@@ -71,7 +71,7 @@ window.onload = function () {
         // Nếu không, chuyển đến ảnh tiếp theo
         goToSlide(currentSlide + 1);
       }
-    }, 4000); // 4 giây
+    }, 3000); // 3 giây
   }
   // Bắt đầu chuyển ảnh tự động khi trang web tải hoàn tất
   startAutoSlide();
