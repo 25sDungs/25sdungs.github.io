@@ -57,6 +57,15 @@ table#gioi-thieu {
   color: #000054;
 }
 
+table td .ulnodeco {
+  padding-left: 10px;
+
+}
+
+table td ul {
+  padding: 0;
+}
+
 .end {
   color: #ffffff;
   margin-top: 0.1rem;
@@ -116,7 +125,7 @@ p>a {
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   display: none;
   background-color: #007BFF;
   color: #fff;
@@ -127,6 +136,7 @@ p>a {
   font-size: 18px;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
 }
 
 #backToTopBtn.show {
@@ -173,21 +183,80 @@ iframe.iframe-vid {
   height: 450px;
 }
 
+
 @media (max-width: 450px) {
   .maps {
     width: 95%;
+  }
+
+  ul.menu.right {
+    display: none;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .welcome {
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    background: linear-gradient(bisque, whitesmoke, bisque);
+  }
+
+  .menu {
+    background-color: lightseagreen;
   }
 
   .gioi-thieu-main .gioi-thieu-chung {
     width: 95%;
   }
 
-  .iframe-vid-pr {
-    text-align: center;
-  }
-
   .iframe-vid {
     width: 300px !important;
     height: 150px !important;
+  }
+}
+
+@media (max-width: 280px) {
+  * {
+    font-size: 0.8rem;
+  }
+
+  .iframe-vid {
+    width: 250px !important;
+    height: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1000px) {
+
+  .nav {
+    padding: 1rem;
+  }
+
+  ul.menu.right {
+    display: none;
+  }
+
+  ul.menu.left {
+    justify-content: space-between;
+  }
+
+  .menu {
+    background-color: lightseagreen;
+  }
+
+  .welcome {
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .iframe-vid {
+    width: 450px !important;
+    height: 200px !important;
   }
 }

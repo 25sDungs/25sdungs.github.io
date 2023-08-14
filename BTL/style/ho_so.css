@@ -75,3 +75,61 @@ div.SinhVien img {
     text-align: center;
     height: 1.5rem;
 }
+
+@media (max-width: 450px) {
+    .SinhVien {
+        display: flex;
+        width: 100%;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    #timSinhVien {
+        margin: 0.3rem;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        height: 1.5rem;
+    }
+
+    .menu {
+        background-color: lightseagreen;
+    }
+
+    .info {
+        width: 45%;
+    }
+
+    .image {
+        width: 45%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .DanhSachSinhVien {
+        width: 100%;
+    }
+
+    .aside-right {
+        width: 0%;
+    }
+
+    .aside-left {
+        width: 0%;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .maps {
+        width: 100%;
+    }
+}
